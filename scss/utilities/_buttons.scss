@@ -1,0 +1,23 @@
+@use "../custom" as *;
+
+.btns {
+  min-width: 217px;
+  height: 56px;
+  padding: 16px 32px;
+  background-color: $primary;
+  border-radius: 6px;
+  font-weight: 900;
+  font-size: 18px;
+  border: none;
+}
+.btn--default {
+  color: $light-cream;
+  background-color: $primary;
+  &:hover {
+    background-color: #66d2cf;
+  }
+}
+.btn--disabled {
+  color: $light-cream;
+  background-color: $light-grey;
+}

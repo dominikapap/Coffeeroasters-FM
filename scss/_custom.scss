@@ -1,0 +1,27 @@
+// OVERRIDE COLORS
+
+$dark-cyan: #0e8784;
+$dark-grey-blue: #333d4b;
+$pale-orange: #fdd6ba;
+$light-cream: #fefcf7;
+$grey: #83888f;
+$light-grey: #e2dedb;
+$white: #ffffff;
+$black: #333d4b;
+
+$primary: $dark-cyan;
+$secondary: $dark-grey-blue;
+$info: $pale-orange;
+
+//OVERRIDE CONTAINER WIDTH
+
+$container-max-widths: (
+  xs: 327px,
+  sm: 516px,
+  md: 688px,
+  lg: 912px,
+  xl: 1080px,
+  xxl: 1280px,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

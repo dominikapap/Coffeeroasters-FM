@@ -1,0 +1,28 @@
+@use "../custom" as *;
+
+.navbar {
+  padding-top: 42px;
+  min-height: 25px;
+}
+.navbar-nav {
+  .nav-link {
+    gap: 32px;
+    color: $grey !important;
+    padding-bottom: 0;
+    padding-top: 16px;
+    &:hover,
+    &:active {
+      color: $secondary;
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  display: inline;
+}
+.navbar-brand {
+  max-width: 42%;
+  img {
+    width: 100%;
+  }
+}
