@@ -8,7 +8,6 @@
   .nav-link {
     gap: 32px;
     color: $grey !important;
-    padding-bottom: 0;
     padding-top: 16px;
     &:hover,
     &:active {
@@ -21,7 +20,7 @@
   display: inline;
 }
 .navbar-brand {
-  max-width: 42%;
+  max-width: 50%;
   img {
     width: 100%;
   }

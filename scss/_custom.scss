@@ -23,5 +23,9 @@ $container-max-widths: (
   xl: 1080px,
   xxl: 1280px,
 );
+$container-padding-x: 0;
+.container {
+  transition: all 750ms ease-in-out;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

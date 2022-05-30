@@ -1,6 +1,11 @@
 @use "../custom.scss" as *;
 
-$font-family-primary: "Fraunces", serif;
+@font-face {
+  font-family: "Fraunces9";
+  src: url(/assets/fonts/Fraunces9pt-Black.ttf);
+}
+
+$font-family-primary: Fraunces9, "Fraunces", serif;
 $font-family-secondary: "Barlow", sans-serif;
 
 body {
@@ -29,18 +34,15 @@ button {
 }
 
 h1 {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: clamp(40px, 1rem + 6vw, 48px);
+  line-height: 100%;
   text-align: center;
 
   @include media-breakpoint-up(md) {
-    font-size: 48px;
-    line-height: 48px;
     text-align: left;
   }
   @include media-breakpoint-up(lg) {
-    font-size: 72px;
-    line-height: 72px;
+    font-size: max(72px);
   }
 }
 
