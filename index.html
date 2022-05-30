@@ -18,12 +18,15 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
+    <!--///////////////////////////////////////////////////////
+                         NAVBAR 
+/////////////////////////////////////////////////////////-->
+    <nav class="navbar navbar-expand-md">
         <div class="container px-0">
             <a class="navbar-brand" href="#"><img src="/assets/shared/desktop/logo.svg" alt="logo"></a>
             <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><img src="/assets/shared/mobile/icon-hamburger.svg" alt=""></span>
+                <img src="/assets/shared/mobile/icon-hamburger.svg" alt="">
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -41,20 +44,69 @@
             </div>
         </div>
     </nav>
-    <section class="container home text-white ">
-        <h1>Great coffee <br>made simple.</h1>
-        <p class="home__description"> Start your mornings with the world’s best coffees. Try our expertly curated
-            artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-        <div class="text-center text-md-start"><button class="btns home__btn btn--default " role="button">
-                Create your
-                plan</button></div>
+
+    <!--///////////////////////////////////////////////////////
+                        HEADER SECTION 
+/////////////////////////////////////////////////////////-->
+    <section class="container " id="home">
+        <div class=" header text-white ">
+            <h1>Great coffee <br>made simple.</h1>
+            <p class="header__description"> Start your mornings with the world’s best coffees. Try our expertly curated
+                artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+            <div class="text-center text-md-start"><button class="btns header__btn btn--default " role="button">
+                    Create your
+                    plan</button></div>
+        </div>
+
+        <!-- COLLECTION -->
+        <div class="collection">
+            <h2 class="collection__title text-center">
+                our collection</h2>
+
+
+            <div class="row text-center text-md-start text-lg-center ">
+                <div class="collection__card col-12 col-lg-6 col-xl-3 d-sm-flex d-lg-block">
+                    <div class=" col-sm-6  col-lg-12 text-center"><img
+                            src="/assets/home/desktop/image-gran-espresso.png" alt="">
+                    </div>
+                    <div class=" col-sm-6 col-lg-12 ">
+                        <h4> Gran Espresso</h4>
+                        <p> Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+                    </div>
+                </div>
+                <div class="collection__card col-12 col-lg-6 col-xl-3 d-sm-flex d-lg-block">
+                    <div class=" col-sm-6  col-lg-12 text-center"><img src=" /assets/home/desktop/image-planalto.png"
+                            alt=""></div>
+                    <div class=" col-sm-6 col-lg-12">
+                        <h4> Planalto</h4>
+                        <p> Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+                    </div>
+                </div>
+                <div class="collection__card col-12 col-lg-6 col-xl-3 d-sm-flex d-lg-block">
+                    <div class=" col-sm-6  col-lg-12 text-center"><img src="/assets/home/desktop/image-piccollo.png"
+                            alt=""></div>
+                    <div class=" col-sm-6 col-lg-12">
+                        <h4> Piccollo</h4>
+                        <p> Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+                    </div>
+                </div>
+                <div class="collection__card col-12 col-lg-6 col-xl-3 d-sm-flex d-lg-block">
+                    <div class=" col-sm-6  col-lg-12 text-center"><img src="/assets/home/desktop/image-danche.png"
+                            alt=""></div>
+                    <div class=" col-sm-6 col-lg-12">
+                        <h4> Danche</h4>
+                        <p> Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
 
 
     </div>
-
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
