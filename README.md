@@ -1,7 +1,7 @@
-  ***********WORK IN PROGRESS*******
+# WORK IN PROGRESS
 
 
-# Frontend Mentor - Coffeeroasters subscription site solution
+# Frontend Mentor - Coffeeroasters subscription site 
 
 This is a solution to the [Coffeeroasters subscription site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coffeeroasters-subscription-site-5Fc26HVY6).
 
@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [TO BE ADDED](https://your-solution-url.com)
-- Live Site URL: [TO BE ADDED](https://your-live-site-url.com)
+- Solution URL: [https://dominikapap-coffeeroasters.netlify.app](https://dominikapap-coffeeroasters.netlify.app)
+- Live Site URL: [https://github.com/dominikapap/Coffeeroasters-FM](https://github.com/dominikapap/Coffeeroasters-FM)
 
 ## My process
 
