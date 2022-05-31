@@ -47,8 +47,10 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: clamp(28px, 5vw, 32px);
+  @include media-breakpoint-up(lg) {
+    font-size: max(40px);
+  }
 }
 h3 {
   font-size: 32px;
@@ -60,8 +62,13 @@ h4 {
 }
 
 p {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.8;
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 button {
