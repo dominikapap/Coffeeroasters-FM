@@ -1,0 +1,117 @@
+@use "../../custom" as *;
+
+.qualities {
+  padding: 0 clamp(24px, 6vw, 58px);
+  border-radius: 10px;
+  position: relative;
+  height: fit-content;
+  @include media-breakpoint-up(xl) {
+    padding: 0 clamp(58px, 6vw, 85px);
+  }
+  &__bg {
+    background-color: $secondary;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 65%;
+    border-radius: 10px;
+    @include media-breakpoint-up(md) {
+      min-height: 70%;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 80%;
+    }
+  }
+  &__header {
+    h2 {
+      margin-bottom: 24px;
+      padding-top: 100px;
+      white-space: nowrap;
+      line-height: 28px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 36px;
+      }
+    }
+    p {
+      max-width: 540px;
+      font-size: 15px;
+      line-height: 25px;
+      margin: 0 auto 64px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 70px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 86px;
+      }
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+    }
+  }
+  &__card {
+    background-color: $primary;
+    text-align: center;
+    color: $light-cream;
+    border-radius: 8px;
+    padding: 41px 33.5px 35px;
+    max-width: 86%;
+    margin: 0 auto;
+    @include media-breakpoint-between(md, xl) {
+      display: flex;
+      flex-direction: row;
+      max-width: 580px;
+      text-align: left;
+      padding-bottom: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 47px;
+      padding-right: 48px;
+    }
+  }
+  &__description {
+    @include media-breakpoint-between(md, xl) {
+      margin-left: 55.5px;
+    }
+    h4 {
+      margin-bottom: 24px;
+      @include media-breakpoint-between(md, xl) {
+        margin-bottom: 16px;
+      }
+    }
+    p {
+      @include media-breakpoint-between(md, xl) {
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__img {
+    margin-bottom: 56px;
+    margin-left: 37px;
+    margin-top: 31px;
+    @include media-breakpoint-up(lg) {
+      margin-left: 0;
+    }
+    img {
+      @include media-breakpoint-between(md, xl) {
+        width: 56px;
+      }
+    }
+  }
+}
+
+//fix truck icon position
+.qualities__card:last-child img {
+  @include media-breakpoint-up(lg) {
+    padding-top: 1.5rem;
+  }
+}
