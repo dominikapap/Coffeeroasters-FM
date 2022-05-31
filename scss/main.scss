@@ -2,4 +2,9 @@
 @use "utilities/typography" as *;
 @use "utilities/buttons" as *;
 @use "sections/navbar" as *;
-@use "sections/home" as *;
+@use "sections/home/header" as *;
+@use "sections/home/collection" as *;
+@use "sections/home/qualities" as *;
+body {
+  padding-bottom: 5rem;
+}
