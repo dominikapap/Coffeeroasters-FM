@@ -1,0 +1,50 @@
+@use "../custom" as *;
+
+footer.container {
+  background-color: $secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px min(54px) 54px;
+  gap: 49px;
+  @include media-breakpoint-up(sm) {
+    gap: 32px;
+  }
+  @include media-breakpoint-up(xl) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 47px 85px;
+  }
+  .logo-img img {
+    max-width: 58vw;
+  }
+  ul.navbar-nav {
+    text-align: center;
+    gap: 24px;
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+    }
+    @include media-breakpoint-up(xl) {
+      gap: 32px;
+    }
+    @include media-breakpoint-up(xxl) {
+      transform: translateX(-130px);
+    }
+    a.nav-link {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.923077px;
+      text-transform: uppercase;
+      padding: 0;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 24px;
+    @include media-breakpoint-between(sm, xl) {
+      margin-top: 33px;
+    }
+  }
+}
