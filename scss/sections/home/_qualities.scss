@@ -96,10 +96,10 @@
   }
   &__img {
     margin-bottom: 56px;
-    margin-left: 37px;
+
     margin-top: 31px;
-    @include media-breakpoint-up(lg) {
-      margin-left: 0;
+    @include media-breakpoint-between(md, xl) {
+      margin-left: 37px;
     }
     img {
       @include media-breakpoint-between(md, xl) {

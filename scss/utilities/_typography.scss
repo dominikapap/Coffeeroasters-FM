@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Fraunces9";
-  src: url(/assets/fonts/Fraunces9pt-Black.ttf);
+  src: url("/assets/fonts/Fraunces9pt-Black.ttf");
 }
 
 $font-family-primary: Fraunces9, "Fraunces", serif;
@@ -23,6 +23,12 @@ nav {
   text-transform: uppercase;
 }
 
+.mobile-nav {
+  font-family: $font-family-primary;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+}
 h1,
 h2,
 h3,

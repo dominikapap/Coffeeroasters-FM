@@ -27,5 +27,10 @@ $container-padding-x: 0;
 .container {
   transition: all 750ms ease-in-out;
 }
+//NAVBAR
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

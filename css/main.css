@@ -3,6 +3,10 @@
   transition: all 750ms ease-in-out;
 }
 
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11293,7 +11297,7 @@ textarea.form-control-lg {
 }
 @font-face {
   font-family: "Fraunces9";
-  src: url(/assets/fonts/Fraunces9pt-Black.ttf);
+  src: url("/assets/fonts/Fraunces9pt-Black.ttf");
 }
 body {
   font-family: "Barlow", sans-serif;
@@ -11308,6 +11312,13 @@ nav {
   line-height: 15px;
   letter-spacing: 0.923077px;
   text-transform: uppercase;
+}
+
+.mobile-nav {
+  font-family: Fraunces9, "Fraunces", serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 h1,
@@ -11421,6 +11432,35 @@ button {
   width: 100%;
 }
 
+.mobile-nav-container {
+  position: relative;
+}
+.mobile-nav-container .mobile-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  width: 100%;
+  min-height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 55%, rgba(254, 252, 247, 0.504981) 100%);
+}
+.mobile-nav-container .mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.mobile-nav-container .mobile-nav ul a {
+  color: #333d4b !important;
+}
+@media (min-width: 768px) {
+  .mobile-nav-container .mobile-nav {
+    display: none !important;
+  }
+}
+
 .header {
   background: #a2a2a2;
   background-image: url("/assets/home/mobile/image-hero-coffeepress.jpg");
@@ -11530,13 +11570,12 @@ button {
 }
 .collection__card p {
   max-width: 282px;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
   .collection__card p {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .collection__card img {
@@ -11665,12 +11704,11 @@ button {
 }
 .qualities__img {
   margin-bottom: 56px;
-  margin-left: 37px;
   margin-top: 31px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .qualities__img {
-    margin-left: 0;
+    margin-left: 37px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
