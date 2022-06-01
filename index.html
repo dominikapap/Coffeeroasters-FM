@@ -22,13 +22,13 @@
                          NAVBAR 
 /////////////////////////////////////////////////////////-->
     <nav class="navbar navbar-expand-md">
-        <div class="container px-0">
+        <div class="container px-0 ">
             <a class="navbar-brand" href="#"><img src="/assets/shared/desktop/logo.svg" alt="logo"></a>
             <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="/assets/shared/mobile/icon-hamburger.svg" alt="">
+                <img class="toggler-icon" src="/assets/shared/mobile/icon-hamburger.svg" alt="">
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -45,17 +45,32 @@
         </div>
     </nav>
 
+
     <!--///////////////////////////////////////////////////////
                         HEADER SECTION 
 /////////////////////////////////////////////////////////-->
     <section class="container " id="home">
-        <div class=" header text-white ">
+        <div class=" header text-white mobile-nav-container ">
             <h1>Great coffee <br>made simple.</h1>
             <p class="header__description"> Start your mornings with the world’s best coffees. Try our expertly curated
                 artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
             <div class="text-center text-md-start"><button class="btns header__btn btn--default " role="button">
                     Create your
                     plan</button></div>
+            <div class=" mobile-nav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create Your Plan</a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
 
         <!-- COLLECTION -->
@@ -64,7 +79,7 @@
                 our collection</h2>
 
 
-            <div class="row text-center text-md-start text-lg-center ">
+            <div class="row text-center text-sm-start text-lg-center ">
                 <div class="collection__card col-12 col-lg-6 col-xl-3 d-sm-flex d-lg-block">
                     <div class=" col-sm-6  col-lg-12 text-center"><img
                             src="/assets/home/desktop/image-gran-espresso.png" alt="">
@@ -104,6 +119,7 @@
         <!--QUALITIES-->
 
         <div class="qualities">
+
             <div class="qualities__header text-center text-white">
                 <h2>Why choose us?</h2>
                 <p>A large part of our role is choosing which particular coffees will be featured in our range. This
@@ -146,7 +162,8 @@
 
 
     </div>
-    <!--<script src="script.js"></script>-->
+    <script src="script.js"></script>
+    <!---<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
 </body>
 
 </html>
