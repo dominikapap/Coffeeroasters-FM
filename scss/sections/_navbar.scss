@@ -31,11 +31,11 @@
   .mobile-nav {
     display: none;
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 0;
     background-color: blue;
     width: 100%;
-    min-height: 100%;
+    min-height: 510px;
     background: linear-gradient(
       180deg,
       $white 0%,

@@ -11438,11 +11438,11 @@ button {
 .mobile-nav-container .mobile-nav {
   display: none;
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 0;
   background-color: blue;
   width: 100%;
-  min-height: 100%;
+  min-height: 510px;
   background: linear-gradient(180deg, #ffffff 0%, #ffffff 55%, rgba(254, 252, 247, 0.504981) 100%);
 }
 .mobile-nav-container .mobile-nav ul {
