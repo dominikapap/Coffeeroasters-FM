@@ -11325,6 +11325,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 a[role=button],
 button {
   font-family: Fraunces9, "Fraunces", serif;
@@ -11365,6 +11366,17 @@ h4 {
   font-size: 24px;
   line-height: 32px;
 }
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+h5 {
+  font-size: 28px;
+  line-height: 32px;
+}
 
 p {
   font-size: 15px;
@@ -11386,7 +11398,7 @@ button {
 .btns {
   min-width: 217px;
   height: 56px;
-  padding: 16px 32px;
+  padding: 15px 32px 16px;
   background-color: #0e8784;
   border-radius: 6px;
   font-weight: 900;
@@ -11438,7 +11450,7 @@ button {
 .mobile-nav-container .mobile-nav {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 58px;
   left: 0;
   background-color: blue;
   width: 100%;
@@ -11467,6 +11479,7 @@ footer.container {
   flex-direction: column;
   align-items: center;
   padding: 50px 54px 54px;
+  margin-top: 120px;
   gap: 49px;
 }
 @media (min-width: 576px) {
@@ -11578,7 +11591,7 @@ footer.container .social-icons {
 }
 @media (min-width: 992px) {
   .collection {
-    marginp: 136px 0;
+    margin: 136px 0;
   }
 }
 @media (min-width: 768px) {
@@ -11781,4 +11794,68 @@ footer.container .social-icons {
   .qualities__card:last-child img {
     padding-top: 1.5rem;
   }
+}
+
+.process-info {
+  margin-top: 120px;
+}
+.process-info h4 {
+  color: #83888f;
+  margin-bottom: 36px;
+}
+.process-info p {
+  opacity: 1;
+  margin-bottom: 0;
+}
+.process-info__steps {
+  padding-bottom: 79px;
+  gap: 56px;
+}
+@media (min-width: 768px) {
+  .process-info__steps {
+    gap: clamp(56px, 6vw, 95px);
+    padding-bottom: 44px;
+  }
+}
+@media (min-width: 1400px) {
+  .process-info__steps {
+    padding-bottom: 64px;
+  }
+}
+.process-info__step {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .process-info__step {
+    gap: 36px;
+    max-width: 285px;
+  }
+}
+@media (max-width: 767.98px) {
+  .process-info__step:first-child {
+    padding-top: 40px;
+  }
+}
+.process-info__step:last-child .line {
+  border: solid 3px white;
+  z-index: -9;
+}
+.process-info__number {
+  font-family: "Fraunces9";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+}
+.process-info .line {
+  border-bottom: solid 2px #fdd6ba;
+  width: 150%;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  z-index: -10;
 }/*# sourceMappingURL=main.css.map */
