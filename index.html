@@ -23,7 +23,7 @@
 /////////////////////////////////////////////////////////-->
     <nav class="navbar navbar-expand-md">
         <div class="container px-0 mobile-nav-container">
-            <a class="navbar-brand" href="#"><img src="/assets/shared/desktop/logo.svg" alt="logo"></a>
+            <a class="navbar-brand" href="#home"><img src="/assets/shared/desktop/logo.svg" alt="logo"></a>
             <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img class="toggler-icon" src="/assets/shared/mobile/icon-hamburger.svg" alt="">
@@ -31,10 +31,10 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Create Your Plan</a>
@@ -46,10 +46,10 @@
             <div class=" mobile-nav">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Create Your Plan</a>
@@ -215,30 +215,74 @@
     </section>
 
 
-    <footer class="container">
-        <div class="logo-img"><img src="/assets/shared/desktop/logo2.svg" alt=""></div>
-        <div class="menu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Create Your Plan</a>
-                </li>
+    <!--///////////////////////////////////////////////////////
+                        ABOUT US SECTION 
+/////////////////////////////////////////////////////////-->
+    <section class="container " id="home">
+        <section class="about container">
+            <div class=" about__header text-center text-md-start" id="about">
+                <h2>About Us</h2>
+                <p>Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from
+                    around
+                    the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every
+                    shipment.</p>
+            </div>
 
-            </ul>
-        </div>
-        <div class="social-icons"><img src="/assets/shared/desktop/icon-facebook.svg" alt="fb icon">
-            <img src="/assets/shared/desktop/icon-twitter.svg" alt="twitter icon">
-            <img src="/assets/shared/desktop/icon-instagram.svg" alt="instagram icon">
-        </div>
-    </footer>
+            <div class="commitment  d-flex flex-column flex-md-row text-center text-md-start">
+                <div class="commitment__img ">
 
-    <script src="script.js"></script>
-    <!---<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+                    <picture>
+                        <source srcset="/assets/about/desktop/image-commitment.jpg" media="(min-width: 1200px)" />
+                        <source srcset="/assets/about/tablet/image-commitment.jpg" media="(min-width: 768px)" />
+                        <img src="/assets/about/mobile/image-commitment.jpg" alt="man pouring coffee" />
+                    </picture>
+
+                </div>
+
+                <!--COMMITMENT-->
+
+                <div class="commitment__content ">
+                    <h2>Our commitment</h2>
+                    <p>We’re built on a simple mission and a commitment to doing good along the way. We want to make it
+                        easy
+                        for you to discover and brew the world’s best coffee at home. It all starts at the source. To
+                        locate
+                        the specific lots we want to purchase, we travel nearly 60 days a year trying to understand the
+                        challenges and opportunities in each of these places. We collaborate with exceptional coffee
+                        growers
+                        and empower a global community of farmers through with well above fair-trade benchmarks. We also
+                        offer training, support farm community initiatives, and invest in coffee plant science. Curating
+                        only the finest blends, we roast each lot to highlight tasting profiles distinctive to their
+                        native
+                        growing region.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container">
+            <div class="logo-img"><img src="/assets/shared/desktop/logo2.svg" alt=""></div>
+            <div class="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create Your Plan</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="social-icons"><img src="/assets/shared/desktop/icon-facebook.svg" alt="fb icon">
+                <img src="/assets/shared/desktop/icon-twitter.svg" alt="twitter icon">
+                <img src="/assets/shared/desktop/icon-instagram.svg" alt="instagram icon">
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+        <!---<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
 </body>
 
 </html>

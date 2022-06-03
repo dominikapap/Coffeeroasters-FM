@@ -11858,4 +11858,66 @@ footer.container .social-icons {
   top: 15px;
   left: 30px;
   z-index: -10;
+}
+
+section > * {
+  margin-bottom: clamp(120px, 18.75vw, 147px);
+}
+
+.about__header {
+  background-image: url("/assets/about/tablet/image-hero-whitecup.jpg");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  color: #fefcf7;
+  padding: 111px 24px 87px;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .about__header {
+    padding: 118px 58px;
+  }
+}
+@media (min-width: 992px) {
+  .about__header {
+    background-position: unset;
+    background-image: url("/assets/about/desktop/image-hero-whitecup.jpg");
+    padding: 137px 85px;
+  }
+}
+.about__header h2 {
+  margin-bottom: 24px;
+}
+.about__header p {
+  max-width: 445px;
+}
+
+.commitment {
+  gap: 32px;
+}
+@media (min-width: 768px) {
+  .commitment {
+    gap: clamp(68px, 8vw, 125px);
+  }
+}
+@media (min-width: 1200px) {
+  .commitment {
+    justify-content: center;
+  }
+}
+.commitment h2 {
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+@media (min-width: 992px) {
+  .commitment h2 {
+    margin-top: clamp(32px, 7vw, 90px);
+  }
+}
+.commitment p {
+  max-width: 539px;
+}
+.commitment img {
+  border-radius: 8px;
+  max-height: 520px;
 }/*# sourceMappingURL=main.css.map */
