@@ -11983,6 +11983,12 @@ section > * {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+@media (max-width: 1199.98px) {
+  .quality__bg {
+    padding-top: 1px;
+    margin-top: -1px;
+  }
+}
 .quality__text {
   width: 85%;
   margin: 64px auto 0;
