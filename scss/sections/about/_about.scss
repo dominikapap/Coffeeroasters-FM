@@ -1,8 +1,12 @@
 @use "../../custom" as *;
 
-section > * {
+section.about > * {
   margin-bottom: clamp(120px, 18.75vw, 147px);
+  @include media-breakpoint-up(xl) {
+    margin-bottom: max(168px);
+  }
 }
+
 .about {
   & > *:nth-child(odd) {
     color: white;
@@ -15,6 +19,7 @@ section > * {
     color: $light-cream;
     padding: 111px 24px 87px;
     border-radius: 10px;
+    margin-bottom: max(147px);
     @include media-breakpoint-up(md) {
       padding: 118px 58px;
     }
@@ -129,6 +134,48 @@ section > * {
       @include media-breakpoint-up(xl) {
         margin-bottom: 2rem;
       }
+    }
+  }
+}
+
+.headquarters {
+  @include media-breakpoint-up(xl) {
+    margin-left: 70px;
+  }
+  h4 {
+    color: $grey;
+    margin-bottom: 72px;
+  }
+
+  &__countries {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      gap: 9px;
+    }
+  }
+
+  &__country {
+    width: 100%;
+    img {
+      margin-bottom: 48px;
+    }
+    h5 {
+      margin-bottom: 22px;
+      white-space: nowrap;
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 32px;
+        margin-bottom: 24px;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
     }
   }
 }
