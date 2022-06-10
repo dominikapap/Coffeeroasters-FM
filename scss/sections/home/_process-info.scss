@@ -37,10 +37,6 @@
       padding-top: 40px;
     }
   }
-  &__step:last-child .line {
-    border: solid 3px white;
-    z-index: -9;
-  }
 
   &__number {
     font-family: "Fraunces9";
@@ -54,12 +50,18 @@
     @include media-breakpoint-up(md) {
     }
   }
-  .line {
-    border-bottom: solid 2px #fdd6ba;
-    width: 150%;
-    position: absolute;
-    top: 15px;
-    left: 30px;
-    z-index: -10;
-  }
+}
+
+.line {
+  border-bottom: solid 2px #fdd6ba;
+  width: 150%;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  z-index: -10;
+}
+
+.line--light {
+  border: solid 3px white;
+  z-index: -9;
 }
