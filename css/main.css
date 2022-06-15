@@ -11389,6 +11389,25 @@ button {
   line-height: 25px;
 }
 
+li {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: Fraunces9, "Fraunces", serif;
+  font-weight: 900;
+}
+
+.order-summary__text {
+  color: white;
+  font-family: Fraunces9, "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+}
+.order-summary__text span {
+  color: #0e8784;
+}
+
 .btns {
   min-width: 217px;
   height: 56px;
@@ -11399,6 +11418,11 @@ button {
   font-size: 18px;
   border: none;
 }
+.btns:disabled {
+  color: #fefcf7;
+  background-color: #e2dedb;
+  pointer-events: none;
+}
 
 .btn--default {
   color: #fefcf7;
@@ -11406,11 +11430,6 @@ button {
 }
 .btn--default:hover {
   background-color: #66d2cf;
-}
-
-.btn--disabled {
-  color: #fefcf7;
-  background-color: #e2dedb;
 }
 
 .navbar {
@@ -12128,5 +12147,167 @@ section.subscription > * {
   .process-info__text--narrow {
     max-width: 85%;
     margin: 0 auto;
+  }
+}
+
+.coffee-choices {
+  display: flex;
+  gap: 125px;
+  justify-content: space-around;
+}
+.coffee-choices ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 0;
+  width: 255px;
+}
+.coffee-choices li,
+.coffee-choices a {
+  list-style: none;
+  text-decoration: none;
+  color: #83888f;
+  padding-bottom: 24px;
+  opacity: 0.6;
+  border-bottom: solid 1px #83888f;
+}
+.coffee-choices li:last-child,
+.coffee-choices a:last-child {
+  border: none;
+}
+.coffee-choices li span,
+.coffee-choices a span {
+  margin-right: 25.5px;
+  opacity: 0.4;
+}
+
+.nav-link.active {
+  color: red;
+}
+
+.accordion-item {
+  background-color: white;
+  border: none;
+  margin-bottom: 88px;
+}
+.accordion-item .accordion-body {
+  display: flex;
+  gap: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .accordion-item .accordion-body {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .accordion-item .accordion-body {
+    gap: 23px;
+  }
+}
+.accordion-item .accordion-body .card {
+  background-color: #fefcf7;
+  border-radius: 8px;
+  border: none;
+  padding: clamp(24px, 4.2vw, 32px) clamp(25px, 3.2vw, 26px);
+}
+@media (min-width: 768px) {
+  .accordion-item .accordion-body .card {
+    min-height: 250px;
+    max-width: 228px;
+  }
+}
+.accordion-item .accordion-body .card:hover {
+  background-color: #fdd6ba;
+  cursor: pointer;
+}
+.accordion-item .accordion-body .card p {
+  font-size: 16px;
+}
+.accordion-item .accordion-body .card:focus, .accordion-item .accordion-body .card:focus-within {
+  background-color: #0e8784;
+  color: white;
+}
+.accordion-item .accordion-body input:checked + .card {
+  background-color: #0e8784;
+  color: white;
+}
+
+.accordion-item .accordion-button {
+  background-color: transparent;
+  border: none;
+  color: #83888f;
+}
+
+.accordion-button {
+  font-size: clamp(24px, 5vw, 32px);
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  .accordion-button {
+    font-size: 40px;
+  }
+}
+.accordion-button:disabled {
+  opacity: 0.5;
+}
+
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: url("/assets/plan/acc-open.svg");
+}
+.accordion-button::after:hover {
+  background-image: url("/assets/plan/acc-open-hover.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("/assets/plan/acc-closed.svg");
+}
+.accordion-button:not(.collapsed):hover .accordion-button:not(.collapsed)::after {
+  background-image: url("/assets/plan/acc-closed-hover.svg");
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: column;
+}
+.order-summary__content {
+  background: #2c343e;
+  border-radius: 10px;
+  width: 100%;
+  padding: clamp(24px, 3.5vw, 47px) 32px;
+  margin-bottom: 56px;
+}
+@media (min-width: 768px) {
+  .order-summary__content {
+    margin-bottom: 40px;
+  }
+}
+.order-summary__content > div {
+  max-width: 602px;
+  margin-inline: auto;
+}
+.order-summary__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.order-summary button {
+  align-self: center;
+}
+@media (min-width: 992px) {
+  .order-summary button {
+    align-self: flex-end;
   }
 }/*# sourceMappingURL=main.css.map */
