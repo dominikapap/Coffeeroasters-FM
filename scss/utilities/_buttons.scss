@@ -9,6 +9,11 @@
   font-weight: 900;
   font-size: 18px;
   border: none;
+  &:disabled {
+    color: $light-cream;
+    background-color: $light-grey;
+    pointer-events: none;
+  }
 }
 .btn--default {
   color: $light-cream;
@@ -16,8 +21,4 @@
   &:hover {
     background-color: #66d2cf;
   }
-}
-.btn--disabled {
-  color: $light-cream;
-  background-color: $light-grey;
 }
