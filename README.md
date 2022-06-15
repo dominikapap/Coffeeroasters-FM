@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://dominikapap-coffeeroasters.netlify.app](https://dominikapap-coffeeroasters.netlify.app)
-- Live Site URL: [https://github.com/dominikapap/Coffeeroasters-FM](https://github.com/dominikapap/Coffeeroasters-FM)
+- Solution URL: [https://github.com/dominikapap/Coffeeroasters-FM](https://github.com/dominikapap/Coffeeroasters-FM)
+- Live Site URL: [https://dominikapap-coffeeroasters.netlify.app](https://dominikapap-coffeeroasters.netlify.app)
 
 ## My process
 
