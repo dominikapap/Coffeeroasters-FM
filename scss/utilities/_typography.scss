@@ -87,3 +87,22 @@ button {
   font-size: 18px;
   line-height: 25px;
 }
+
+li {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $font-family-primary;
+  font-weight: 900;
+}
+
+.order-summary__text {
+  color: white;
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  span {
+    color: $primary;
+  }
+}
