@@ -56,6 +56,8 @@ Users should be able to:
 
 - [Responsive Typography](https://www.youtube.com/watch?v=VQraviuwbzU) - This helped optimize headers font sizes across different devices. I really liked this pattern and will use it going forward.
 
+- [How to Fix Issues With CSS Position Sticky Not Working?](https://www.designcise.com/web/tutorial/how-to-fix-issues-with-css-position-sticky-not-working) - This helped me made css position:sticky work in flexbox.
+
 
 
 ## Author
