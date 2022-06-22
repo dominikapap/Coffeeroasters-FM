@@ -11327,7 +11327,10 @@ h3,
 h4,
 h5,
 a[role=button],
-button {
+button,
+.calc-price,
+.order-summary__text,
+.modal-body__text {
   font-family: Fraunces9, "Fraunces", serif;
   font-weight: 900;
 }
@@ -11372,6 +11375,11 @@ h5 {
   line-height: 32px;
 }
 
+h5.modal-title {
+  font-size: clamp(28px, 7.4vw, 40px);
+  line-height: clamp(32px, 8.5vw, 48px);
+}
+
 p {
   font-size: 15px;
   line-height: 25px;
@@ -11396,16 +11404,15 @@ li {
   font-weight: 900;
 }
 
-.order-summary__text {
-  color: white;
-  font-family: Fraunces9, "Fraunces", serif;
-  font-style: normal;
-  font-weight: 900;
+.order-summary__text,
+.modal-body__text {
   font-size: 24px;
   line-height: 40px;
 }
-.order-summary__text span {
-  color: #0e8784;
+
+.calc-price {
+  font-size: 32px;
+  line-height: 36px;
 }
 
 .btns {
@@ -12155,15 +12162,21 @@ section.subscription > * {
   gap: 125px;
   justify-content: space-around;
 }
-.coffee-choices ul {
+.coffee-choices__list {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+.coffee-choices__list ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding-left: 0;
   width: 255px;
 }
-.coffee-choices li,
-.coffee-choices a {
+.coffee-choices__list ul li,
+.coffee-choices__list ul a {
   list-style: none;
   text-decoration: none;
   color: #83888f;
@@ -12171,18 +12184,22 @@ section.subscription > * {
   opacity: 0.6;
   border-bottom: solid 1px #83888f;
 }
-.coffee-choices li:last-child,
-.coffee-choices a:last-child {
+.coffee-choices__list ul li:last-child,
+.coffee-choices__list ul a:last-child {
   border: none;
 }
-.coffee-choices li span,
-.coffee-choices a span {
+.coffee-choices__list ul li span,
+.coffee-choices__list ul a span {
   margin-right: 25.5px;
   opacity: 0.4;
 }
-
-.nav-link.active {
-  color: red;
+.coffee-choices__list ul .nav-link.active {
+  opacity: 1;
+  color: #333d4b;
+}
+.coffee-choices__list ul .nav-link.active span {
+  opacity: 1;
+  color: #0e8784;
 }
 
 .accordion-item {
@@ -12310,4 +12327,65 @@ section.subscription > * {
   .order-summary button {
     align-self: flex-end;
   }
+}
+
+.order-summary__text {
+  color: white;
+}
+.order-summary__text span {
+  color: #0e8784;
+}
+.order-summary__text .addon {
+  color: white;
+}
+
+.modal-dialog {
+  max-width: 540px;
+}
+
+.modal-content > * {
+  padding-left: clamp(28px, 7.2vw, 56px);
+  padding-right: clamp(28px, 7.2vw, 56px);
+}
+.modal-content .modal-body {
+  padding-top: clamp(40px, 10.6vw, 57px);
+  padding-bottom: 0;
+}
+.modal-content .modal-header {
+  background-color: #333d4b;
+  color: #ffffff;
+  padding-top: clamp(24px, 6.4vw, 48px);
+  padding-bottom: clamp(24px, 6.4vw, 40px);
+}
+.modal-content .modal-footer {
+  justify-content: center;
+  border-top: none;
+  padding-top: clamp(24px, 6.4vw, 47px);
+  padding-bottom: clamp(24px, 7.2vw, 56px);
+}
+.modal-content .modal-footer > * {
+  margin: 0;
+}
+.modal-content .modal-footer .calc-price {
+  margin: 0;
+  margin-right: 13px;
+}
+
+.modal-body__text {
+  color: #83888f;
+  margin-bottom: 0.5rem;
+}
+.modal-body__text span {
+  color: #0e8784;
+}
+.modal-body__text .addon {
+  color: #83888f;
+}
+
+.order-confirmation {
+  margin-bottom: 0;
+}
+
+body {
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
