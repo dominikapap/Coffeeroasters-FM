@@ -16,7 +16,7 @@
     <title>Coffeeroasters subscription site</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#subs-nav">
 
     <!--///////////////////////////////////////////////////////
                          NAVBAR 
@@ -73,7 +73,10 @@
                 assortment of the best artisan coffees from around the globe delivered fresh to your door.</p>
             <p class="d-none d-lg-block create-plan__lg-text">Coffee the way you wanted it to be. For coffee delivered
                 tomorrow, or next week. For whatever brew method you use. For choice, for convenience, for quality.</p>
+
+
         </div>
+
 
         <!-- SUBSCRIPTION PROCESS-->
         <div class="process-info process-info--dark container-lg text-center text-md-start">
@@ -127,228 +130,256 @@
 
         <!--COFFEE CHOICES-->
 
-
         <div class="coffee-choices container">
 
             <div class="coffee-choices__list d-none d-xl-block">
-                <div id="navbar-example">
+                <div id="subs-nav">
                     <ul class="nav">
                         <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="#headingOne"><span>01</span>Preferences</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#headingTwo"><span>02</span>Bean
+                                href="#acc-preferences"><span>01</span>Preferences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#acc-bean-type"><span>02</span>Bean
                                 Type</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#headingThree"><span>03</span>Quantity</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#headingFour"><span>04</span>Grind
+                        <li class="nav-item"><a class="nav-link" href="#acc-quantity"><span>03</span>Quantity</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#acc-grind"><span>04</span>Grind
                                 Option</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#headingFive"><span>05</span>Deliveries</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#acc-deliveries"><span>05</span>Deliveries</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div>
-                <form action="#">
-                    <div class="accordion" id="accordionPanelsStayOpen">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How do you drink your coffee?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                                <div class="accordion-body">
-                                    <div><input type="radio" class="btn-check" name="coffee-var" id="capsule"
-                                            value="Capsule " autocomplete="off">
-                                        <label class="card" for="capsule">
+
+                <div class="accordion" id="accordionPanelsStayOpen">
+                    <div class="accordion-item" id="acc-preferences">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How do you drink your coffee?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                            <div class="accordion-body">
+                                <div><input type="radio" class="btn-check" name="preferences" id="capsule"
+                                        value="Capsule " autocomplete="off">
+                                    <label class="card" for="capsule">
 
 
-                                            <h4>Capsule</h4>
-                                            <p>Compatible with Nespresso systems and similar brewers</p>
+                                        <h4>Capsule</h4>
+                                        <p>Compatible with Nespresso systems and similar brewers</p>
+                                    </label>
+                                </div>
+                                <div><input type="radio" class="btn-check" name="preferences" id="filter"
+                                        value="Filter " autocomplete="off">
+                                    <label class="card" for="filter">
+
+                                        <h4>Filter</h4>
+                                        <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+
+
+                                    </label>
+                                </div>
+                                <div><input type="radio" class="btn-check" name="preferences" id="espresso"
+                                        value="Espresso " autocomplete="off">
+                                    <label class="card" for="espresso">
+
+                                        <h4>Espresso</h4>
+                                        <p>Dense and finely ground beans for an intense, flavorful experience</p>
+                                        <label for="Espresso">
                                         </label>
-                                    </div>
-                                    <div><input type="radio" class="btn-check" name="coffee-var" id="filter"
-                                            value="Filter " autocomplete="off">
-                                        <label class="card" for="filter">
-
-                                            <h4>Filter</h4>
-                                            <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
-
-
-                                        </label>
-                                    </div>
-                                    <div><input type="radio" class="btn-check" name="coffee-var" id="espresso"
-                                            value="Espresso " autocomplete="off">
-                                        <label class="card" for="espresso">
-
-                                            <h4>Espresso</h4>
-                                            <p>Dense and finely ground beans for an intense, flavorful experience</p>
-                                            <label for="Espresso">
-                                            </label>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    What type of coffee?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-                                <div class="accordion-body">
-                                    <div><input type="radio" class="btn-check" name="coffee-type" id="single-origin"
-                                            value="Single Origin " autocomplete="off" required><label class="card"
-                                            for="single-origin">
+                    </div>
+                    <div class="accordion-item" id="acc-bean-type">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                id="bean-type-btn">
+                                What type of coffee?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                            <div class="accordion-body">
+                                <div><input type="radio" class="btn-check" name="bean-type" id="single-origin"
+                                        value="Single Origin " autocomplete="off" required><label class="card"
+                                        for="single-origin">
 
-                                            <h4>Single Origin</h4>
-                                            <p>Distinct, high quality coffee from a specific family-owned farm</p>
-                                        </label></div>
-                                    <div><input type="radio" class="btn-check" name="coffee-type" id="decaf"
-                                            value="Decaf " autocomplete="off">
-                                        <label class="card" for="decaf">
+                                        <h4>Single Origin</h4>
+                                        <p>Distinct, high quality coffee from a specific family-owned farm</p>
+                                    </label></div>
+                                <div><input type="radio" class="btn-check" name="bean-type" id="decaf" value="Decaf "
+                                        autocomplete="off">
+                                    <label class="card" for="decaf">
 
-                                            <h4>Decaf</h4>
-                                            <p>Just like regular coffee, except the caffeine has been removed</p>
-                                        </label>
-                                    </div>
-                                    <div><input type="radio" class="btn-check" name="coffee-type" id="blended"
-                                            value="Blended " autocomplete="off">
-                                        <label class="card" for="blended">
+                                        <h4>Decaf</h4>
+                                        <p>Just like regular coffee, except the caffeine has been removed</p>
+                                    </label>
+                                </div>
+                                <div><input type="radio" class="btn-check" name="bean-type" id="blended"
+                                        value="Blended " autocomplete="off">
+                                    <label class="card" for="blended">
 
-                                            <h4>Blended</h4>
-                                            <p>Combination of two or three dark roasted beans of organic coffees</p>
-                                        </label>
-                                    </div>
+                                        <h4>Blended</h4>
+                                        <p>Combination of two or three dark roasted beans of organic coffees</p>
+                                    </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    How much would you like?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
-                                <div class="accordion-body">
-                                    <div><input type="radio" class="btn-check" name="amount" id="small" value="250g "
-                                            autocomplete="off"> <label class="card" for="small">
-                                            <h4>250g</h4>
-                                            <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-                                        </label></div>
-                                    <div><input type="radio" class="btn-check" name="amount" id="medium" value="500g "
-                                            autocomplete="off">
-                                        <label class="card" for="medium">
-                                            <h4>500g</h4>
-                                            <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
-                                        </label>
-                                    </div>
-                                    <div><input type="radio" class="btn-check" name="amount" id="large" value="1000g "
-                                            autocomplete="off">
-                                        <label class="card" for="large">
+                    </div>
+                    <div class="accordion-item" id="acc-quantity">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How much would you like?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                            <div class="accordion-body">
+                                <div><input type="radio" class="btn-check" name="quantity" id="small" value="250g "
+                                        autocomplete="off"> <label class="card" for="small">
+                                        <h4>250g</h4>
+                                        <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                                    </label></div>
+                                <div><input type="radio" class="btn-check" name="quantity" id="medium" value="500g "
+                                        autocomplete="off">
+                                    <label class="card" for="medium">
+                                        <h4>500g</h4>
+                                        <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+                                    </label>
+                                </div>
+                                <div><input type="radio" class="btn-check" name="quantity" id="large" value="1000g "
+                                        autocomplete="off">
+                                    <label class="card" for="large">
 
-                                            <h4>1000g</h4>
-                                            <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
-                                        </label>
-                                    </div>
+                                        <h4>1000g</h4>
+                                        <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+                                    </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" id="grind-btn" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-                                    aria-controls="collapseFour">
-                                    Want us to grind them?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
-                                <div class="accordion-body">
-                                    <div><input type="radio" class="btn-check" name="grind" id="wholebean"
-                                            value="Wholebean" autocomplete="off">
-                                        <label class="card" for="wholebean">
-                                            <h4>Wholebean</h4>
-                                            <p>Best choice if you cherish the full sensory experience</p>
-                                        </label>
-                                    </div>
-                                    <div><input type="radio" class="btn-check" name="grind" id="filter2" value="Filter "
-                                            autocomplete="off">
-                                        <label class="card" for="filter2">
-                                            <h4>Filter</h4>
-                                            <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
-                                        </label>
-                                    </div>
-                                    <div><input type="radio" class="btn-check" name="grind" id="cafetiere"
-                                            value="Cafetiére" autocomplete="off">
-                                        <label class="card" for="cafetiere">
-                                            <h4>Cafetiére</h4>
-                                            <p>Course ground beans specially suited for french press coffee</p>
-                                        </label>
-                                    </div>
+                    </div>
+                    <div class="accordion-item" id="acc-grind">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" id="grind-btn" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                Want us to grind them?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                            <div class="accordion-body">
+                                <div><input type="radio" class="btn-check" name="grind" id="wholebean" value="Wholebean"
+                                        autocomplete="off">
+                                    <label class="card" for="wholebean">
+                                        <h4>Wholebean</h4>
+                                        <p>Best choice if you cherish the full sensory experience</p>
+                                    </label>
+                                </div>
+                                <div><input type="radio" class="btn-check" name="grind" id="filter2" value="Filter "
+                                        autocomplete="off">
+                                    <label class="card" for="filter2">
+                                        <h4>Filter</h4>
+                                        <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                                    </label>
+                                </div>
+                                <div><input type="radio" class="btn-check" name="grind" id="cafetiere" value="Cafetiére"
+                                        autocomplete="off">
+                                    <label class="card" for="cafetiere">
+                                        <h4>Cafetiére</h4>
+                                        <p>Course ground beans specially suited for french press coffee</p>
+                                    </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    How often should we deliver?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
-                                <div class="accordion-body">
-                                    <div><input type="radio" class="btn-check" name="frequency" id="week"
-                                            value="Every week" autocomplete="off">
-                                        <label class="card" for="week">
-                                            <h4>Every week</h4>
-                                            <p>$7.20 per shipment. Includes free first-class shipping.</p>
-                                        </label>
-                                    </div>
-                                    <div><input type="radio" class="btn-check" name="frequency" id="two-weeks"
-                                            value="Every two week" autocomplete="off">
-                                        <label class="card" for="two-weeks">
-                                            <h4>Every 2 weeks</h4>
-                                            <p>$9.60 per shipment. Includes free priority shipping.</p>
-                                        </label>
-                                    </div>
-                                    <div><input type="radio" class="btn-check" name="frequency" id="month"
-                                            value="Every month" autocomplete="off">
-                                        <label class="card" for="month">
-                                            <h4>Every month</h4>
-                                            <p>$12.00 per shipment. Includes free priority shipping.</p>
-                                        </label>
-                                    </div>
+                    </div>
+                    <div class="accordion-item" id="acc-deliveries">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                How often should we deliver?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                            <div class="accordion-body">
+                                <div><input type="radio" class="btn-check" name="deliveries" id="week"
+                                        value="Every week" autocomplete="off">
+                                    <label class="card" for="week">
+                                        <h4>Every week</h4>
+                                        <p>$7.20 per shipment. Includes free first-class shipping.</p>
+                                    </label>
+                                </div>
+                                <div><input type="radio" class="btn-check" name="deliveries" id="two-weeks"
+                                        value="Every two weeks" autocomplete="off">
+                                    <label class="card" for="two-weeks">
+                                        <h4>Every 2 weeks</h4>
+                                        <p>$9.60 per shipment. Includes free priority shipping.</p>
+                                    </label>
+                                </div>
+                                <div><input type="radio" class="btn-check" name="deliveries" id="month"
+                                        value="Every month" autocomplete="off">
+                                    <label class="card" for="month">
+                                        <h4>Every month</h4>
+                                        <p>$12.00 per shipment. Includes free priority shipping.</p>
+                                    </label>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="order-summary">
+                    <div class="order-summary__content">
+                        <div><span class="order-summary__title">ORDER SUMMARY</span>
+                            <p class="order-summary__text">“I drink my coffee <span
+                                    class="order-summary__choice">_____</span>, with a
+                                <span class="order-summary__choice">_____ </span>type of bean. <span
+                                    class="order-summary__choice">_____</span> <span id="ground" class="addon">ground
+                                    ala
+                                    <span class="order-summary__choice">_____</span> ,</span> sent to me <span
+                                    class="order-summary__choice">_____</span>.”
+                            </p>
                         </div>
 
                     </div>
-                    <div class="order-summary">
-                        <div class="order-summary__content">
-                            <div><span class="order-summary__title">ORDER SUMMARY</span>
-                                <p class="order-summary__text">“I drink my coffee <span
-                                        class="order-summary__choice">_____</span>, with a
-                                    <span class="order-summary__choice">_____ </span>type of bean. <span
-                                        class="order-summary__choice">_____</span> <span id="ground"
-                                        class="text-white">ground
-                                        ala
-                                        <span class="order-summary__choice">_____</span> ,</span> sent to me <span
-                                        class="order-summary__choice">_____</span>.”
-                                </p>
-                            </div>
+                    <button type="submit" class="btns btn--default" id="summary-btn" data-bs-toggle="modal"
+                        data-bs-target="#order-modal">Create my
+                        plan!</button>
+                </div>
 
-                        </div>
-                        <button type="submit" class="btns btn--default" id="summary-btn" disabled>Create my
-                            plan!</button>
-                    </div>
-                </form>
             </div>
 
         </div>
 
+        <!-- ORDER SUMMARY MODAL-->
+        <div class="modal fade" id="order-modal" tabindex="-1" aria-labelledby="order-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="order-modal-label">Order summary</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-body__text">
+                        </p>
+                        <p class="order-confirmation">Is this correct? You can proceed to checkout or go back to plan
+                            selection if something is
+                            off. Subscription discount codes can also be redeemed at the checkout. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="d-none d-md-inline calc-price">$14.00/ mo</span>
+                        <button type="button"
+                            class="btns btn--default calc-price-btn d-none d-md-inline">Checkout</button>
+                        <button type="button" class="btns btn--default calc-price-btn--small d-md-none"> Checkout-
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
+    <!--///////////////////////////////////////////////////////
+                        FOOTER 
+/////////////////////////////////////////////////////////-->
 
     <footer class="container">
         <div class="logo-img"><img src="/assets/shared/desktop/logo2.svg" alt=""></div>
@@ -372,8 +403,9 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/subscription.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
