@@ -77,35 +77,47 @@ section.subscription > * {
   gap: 125px;
   justify-content: space-around;
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-left: 0;
-    width: 255px;
-  }
-  li,
-  a {
-    list-style: none;
-    text-decoration: none;
-    color: $grey;
-    padding-bottom: 24px;
-    opacity: 0.6;
-    border-bottom: solid 1px $grey;
-    &:last-child {
-      border: none;
-    }
-    span {
-      margin-right: 25.5px;
-      opacity: 0.4;
+  &__list {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-left: 0;
+      width: 255px;
+      li,
+      a {
+        list-style: none;
+        text-decoration: none;
+        color: $grey;
+        padding-bottom: 24px;
+        opacity: 0.6;
+        border-bottom: solid 1px $grey;
+        &:last-child {
+          border: none;
+        }
+        span {
+          margin-right: 25.5px;
+          opacity: 0.4;
+        }
+      }
+      .nav-link.active {
+        opacity: 1;
+        color: #333d4b;
+        span {
+          opacity: 1;
+          color: $primary;
+        }
+      }
     }
   }
 }
 
-.nav-link.active {
-  color: red;
-}
 //ACCORDION
+
 .accordion-item {
   background-color: white;
   border: none;
@@ -228,4 +240,73 @@ section.subscription > * {
       align-self: flex-end;
     }
   }
+}
+
+.order-summary__text {
+  color: white;
+  span {
+    color: $primary;
+  }
+  .addon {
+    color: white;
+  }
+}
+
+//MODAL
+
+.modal-dialog {
+  max-width: 540px;
+}
+
+.modal-content {
+  & > * {
+    padding-left: clamp(28px, 7.2vw, 56px);
+    padding-right: clamp(28px, 7.2vw, 56px);
+  }
+  .modal-body {
+    padding-top: clamp(40px, 10.6vw, 57px);
+    padding-bottom: 0;
+  }
+
+  .modal-header {
+    background-color: $secondary;
+    color: $white;
+    padding-top: clamp(24px, 6.4vw, 48px);
+    padding-bottom: clamp(24px, 6.4vw, 40px);
+  }
+
+  .modal-footer {
+    justify-content: center;
+    border-top: none;
+    padding-top: clamp(24px, 6.4vw, 47px);
+    padding-bottom: clamp(24px, 7.2vw, 56px);
+
+    & > * {
+      margin: 0;
+    }
+    .calc-price {
+      margin: 0;
+      margin-right: 13px;
+    }
+  }
+}
+
+.modal-body__text {
+  color: $grey;
+  margin-bottom: 0.5rem;
+
+  span {
+    color: $primary;
+  }
+  .addon {
+    color: $grey;
+  }
+}
+
+.order-confirmation {
+  margin-bottom: 0;
+}
+
+body {
+  position: relative;
 }
