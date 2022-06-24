@@ -62,6 +62,7 @@ const orderModal = document.getElementById("order-modal");
 const summary = document.querySelector(".order-summary__text");
 const modalText = document.querySelector(".modal-body__text");
 const calcPrice = document.querySelector(".calc-price");
+const calcPriceBtn = document.querySelector(".calc-price-btn");
 const calcPriceSmall = document.querySelector(".calc-price-btn--small");
 
 summaryBtn.addEventListener("click", () => {
@@ -112,3 +113,10 @@ function getPrice(weight, frequency) {
     }
   }
 }
+
+calcPriceBtn.addEventListener("click", () =>
+  alert("Checkout is not implemented at the moment")
+);
+calcPriceSmall.addEventListener("click", () =>
+  alert("Thank you, this functionality is not implemented at the moment")
+);
