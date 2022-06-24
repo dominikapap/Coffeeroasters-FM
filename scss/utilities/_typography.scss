@@ -34,7 +34,7 @@ h2,
 h3,
 h4,
 h5,
-a[role="button"],
+a.btns,
 button,
 .calc-price,
 .order-summary__text,
@@ -101,6 +101,12 @@ li {
   line-height: 32px;
   font-family: $font-family-primary;
   font-weight: 900;
+}
+
+.collapse li {
+  @include media-breakpoint-down(950px) {
+    font-size: 18px;
+  }
 }
 
 .order-summary__text,
