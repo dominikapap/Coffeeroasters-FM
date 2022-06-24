@@ -11326,7 +11326,7 @@ h2,
 h3,
 h4,
 h5,
-a[role=button],
+a.btns,
 button,
 .calc-price,
 .order-summary__text,
@@ -11404,6 +11404,10 @@ li {
   font-weight: 900;
 }
 
+.collapse li {
+  font-size: 18px;
+}
+
 .order-summary__text,
 .modal-body__text {
   font-size: 24px;
@@ -11424,6 +11428,7 @@ li {
   font-weight: 900;
   font-size: 18px;
   border: none;
+  text-decoration: none;
 }
 .btns:disabled {
   color: #fefcf7;
@@ -11561,13 +11566,12 @@ footer.container .social-icons {
   background-repeat: no-repeat;
   background-position: right top;
   padding: 100px 24px;
-  margin-top: 20px;
+  margin-top: clamp(20px, 5.4vw, 44px);
   border-radius: 10px;
 }
 @media (min-width: 768px) {
   .header {
     background-image: url("/assets/home/tablet/image-hero-coffeepress.jpg");
-    margin-top: 44px;
     padding: 110px 60px;
   }
 }
@@ -11890,6 +11894,9 @@ section.about > * {
   }
 }
 
+.about {
+  margin-top: clamp(20px, 5.4vw, 44px);
+}
 .about > *:nth-child(odd) {
   color: white;
 }
@@ -12097,13 +12104,12 @@ section.subscription > * {
   background-size: cover;
   border-radius: 8px;
   padding: clamp(101px, 16.5vw, 134px) clamp(24px, 7.5vw, 85px) 136px;
-  margin-top: 20px;
+  margin-top: clamp(20px, 5.4vw, 44px);
 }
 @media (min-width: 768px) {
   .create-plan {
     background-image: url("/assets/plan/tablet/image-hero-blackcup.jpg");
     padding-bottom: 126px;
-    margin-top: 44px;
   }
 }
 @media (min-width: 992px) {
