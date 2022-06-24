@@ -12,16 +12,13 @@ section.subscription > * {
   background-size: cover;
   border-radius: 8px;
   padding: clamp(101px, 16.5vw, 134px) clamp(24px, 7.5vw, 85px) 136px;
-  margin-top: 20px;
+  margin-top: clamp(20px, 5.4vw, 44px);
   @include media-breakpoint-up(md) {
     background-image: url("/assets/plan/tablet/image-hero-blackcup.jpg");
-    //padding-left: 58px;
     padding-bottom: 126px;
-    margin-top: 44px;
   }
   @include media-breakpoint-up(lg) {
     background-image: url("/assets/plan/desktop/image-hero-blackcup.jpg");
-    //padding-left: 85px;
     padding-bottom: 134px;
   }
 
