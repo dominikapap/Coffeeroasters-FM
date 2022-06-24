@@ -8,6 +8,7 @@ section.about > * {
 }
 
 .about {
+  margin-top: clamp(20px, 5.4vw, 44px);
   & > *:nth-child(odd) {
     color: white;
   }
