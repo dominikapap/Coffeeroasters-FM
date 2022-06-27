@@ -11447,6 +11447,7 @@ li {
 .navbar {
   padding-top: 42px;
   min-height: 25px;
+  background-color: white;
 }
 
 .navbar-nav .nav-link {
@@ -11475,12 +11476,15 @@ li {
 .mobile-nav-container .mobile-nav {
   display: none;
   position: absolute;
-  top: 58px;
+  padding-top: 13px;
+  top: 45px;
   left: 0;
   background-color: blue;
   width: 100%;
   min-height: 510px;
   background: linear-gradient(180deg, #ffffff 0%, #ffffff 55%, rgba(254, 252, 247, 0.504981) 100%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .mobile-nav-container .mobile-nav ul {
   display: flex;
@@ -11522,18 +11526,16 @@ footer.container {
 footer.container .logo-img img {
   max-width: 58vw;
 }
+footer.container a {
+  line-height: 24px;
+}
 footer.container ul.navbar-nav {
   text-align: center;
-  gap: 24px;
+  gap: clamp(24px, 6.4vw, 32px);
 }
 @media (min-width: 576px) {
   footer.container ul.navbar-nav {
     flex-direction: row;
-  }
-}
-@media (min-width: 1200px) {
-  footer.container ul.navbar-nav {
-    gap: 32px;
   }
 }
 @media (min-width: 1400px) {
@@ -12394,4 +12396,8 @@ section.subscription > * {
 
 body {
   position: relative;
+}
+
+body {
+  padding-top: 100px;
 }/*# sourceMappingURL=main.css.map */
