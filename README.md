@@ -1,9 +1,6 @@
-# WORK IN PROGRESS
+# Coffeeroasters subscription site (Frontend Mentor challenge)
 
-
-# Frontend Mentor - Coffeeroasters subscription site 
-
-This is a solution to the [Coffeeroasters subscription site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coffeeroasters-subscription-site-5Fc26HVY6).
+This is my solution to the [Coffeeroasters subscription site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coffeeroasters-subscription-site-5Fc26HVY6).
 
 ## Table of contents
 
@@ -28,8 +25,7 @@ Users should be able to:
 - Make selections to create a coffee subscription and see an order summary modal of their choices
 
 ### Screenshot
- -WILL BE ADDED
-![](./screenshot.jpg)
+![](./screenshots/1.jpg)
 
 
 
