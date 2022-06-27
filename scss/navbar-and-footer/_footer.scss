@@ -19,18 +19,19 @@ footer.container {
   .logo-img img {
     max-width: 58vw;
   }
+  a {
+    line-height: 24px;
+  }
   ul.navbar-nav {
     text-align: center;
-    gap: 24px;
+    gap: clamp(24px, 6.4vw, 32px);
     @include media-breakpoint-up(sm) {
       flex-direction: row;
-    }
-    @include media-breakpoint-up(xl) {
-      gap: 32px;
     }
     @include media-breakpoint-up(xxl) {
       transform: translateX(-130px);
     }
+
     a.nav-link {
       font-weight: 700;
       font-size: 12px;
