@@ -3,7 +3,55 @@ const radioBtns = Array.from(document.querySelectorAll(".btn-check"));
 const summaryText = Array.from(
   document.querySelectorAll(".order-summary__choice")
 );
-const grindBtn = document.getElementById("grind-btn");
+const grindBtn = document.querySelector("#grind-btn");
+const summaryBtn = document.querySelector("#summary-btn");
+const orderModal = document.querySelector("#order-modal");
+const summary = document.querySelector(".order-summary__text");
+const modalText = document.querySelector(".modal-body__text");
+const calcPrice = document.querySelector(".calc-price");
+const calcPriceBtn = document.querySelector(".calc-price-btn");
+const calcPriceSmall = document.querySelector(".calc-price-btn--small");
+const prices = [
+  {
+    "250g ": [
+      { "Every week": "$28.80/ mo" },
+      { "Every two weeks": "$19.20/ mo" },
+      { "Every month": "$12.00/ mo" },
+    ],
+  },
+  {
+    "500g ": [
+      { "Every week": "$52.00/ mo" },
+      { "Every two weeks": "$35.00/ mo" },
+      { "Every month": "$22.00/ mo" },
+    ],
+  },
+  {
+    "1000g ": [
+      { "Every week": "$88.00/ mo" },
+      { "Every two weeks": "$64.00/ mo" },
+      { "Every month": "$42.00/ mo" },
+    ],
+  },
+];
+
+//DECLARE FUNCTIONS
+function getPrice(weight, frequency) {
+  for (let i = 0; i < prices.length; i++) {
+    //find weight in prices
+    if (weight == Object.keys(prices[i])) {
+      for (let j = 0; j < Object.keys(prices[i][weight]).length; j++) {
+        //find frequency in weight object
+        if (frequency == Object.keys(prices[i][weight][j])) {
+          //return appropriate value
+          return prices[i][weight][j][frequency];
+        }
+      }
+    }
+  }
+}
+
+//EVENT LISTENERS
 
 //add evenet listeners to all radio buttons, every 3 buttons change the field that is supposed to ba updated on click
 
@@ -57,14 +105,6 @@ for (let i = 0; i < radioBtns.length; i++) {
   });
 }
 
-const summaryBtn = document.getElementById("summary-btn");
-const orderModal = document.getElementById("order-modal");
-const summary = document.querySelector(".order-summary__text");
-const modalText = document.querySelector(".modal-body__text");
-const calcPrice = document.querySelector(".calc-price");
-const calcPriceBtn = document.querySelector(".calc-price-btn");
-const calcPriceSmall = document.querySelector(".calc-price-btn--small");
-
 summaryBtn.addEventListener("click", () => {
   modalText.innerHTML = summary.innerHTML;
   calcPrice.innerText = getPrice(
@@ -74,45 +114,6 @@ summaryBtn.addEventListener("click", () => {
   calcPriceSmall.innerText =
     "Checkout- " + getPrice(summaryText[2].innerText, summaryText[4].innerText);
 });
-
-const prices = [
-  {
-    "250g ": [
-      { "Every week": "$28.80/ mo" },
-      { "Every two weeks": "$19.20/ mo" },
-      { "Every month": "$12.00/ mo" },
-    ],
-  },
-  {
-    "500g ": [
-      { "Every week": "$52.00/ mo" },
-      { "Every two weeks": "$35.00/ mo" },
-      { "Every month": "$22.00/ mo" },
-    ],
-  },
-  {
-    "1000g ": [
-      { "Every week": "$88.00/ mo" },
-      { "Every two weeks": "$64.00/ mo" },
-      { "Every month": "$42.00/ mo" },
-    ],
-  },
-];
-
-function getPrice(weight, frequency) {
-  for (let i = 0; i < prices.length; i++) {
-    //find weight in prices
-    if (weight == Object.keys(prices[i])) {
-      for (let j = 0; j < Object.keys(prices[i][weight]).length; j++) {
-        //find frequency in weight object
-        if (frequency == Object.keys(prices[i][weight][j])) {
-          //return appropriate value
-          return prices[i][weight][j][frequency];
-        }
-      }
-    }
-  }
-}
 
 calcPriceBtn.addEventListener("click", () =>
   alert("Checkout is not implemented at the moment")
