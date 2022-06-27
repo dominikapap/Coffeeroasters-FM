@@ -25,7 +25,7 @@ Users should be able to:
 - Make selections to create a coffee subscription and see an order summary modal of their choices
 
 ### Screenshot
-![](./screenshots/1.PNG)
+![](./screenshots/1.png)
 
 
 
