@@ -3,9 +3,12 @@
 @use "utilities/buttons" as *;
 @use "sections/navbar" as *;
 @use "sections/footer" as *;
-@use "sections/home/header" as *;
-@use "sections/home/collection" as *;
-@use "sections/home/qualities" as *;
-@use "sections/home/process-info" as *;
-@use "sections/about/about" as *;
-@use "sections/subscription/subscription" as *;
+@use "sections/home" as *;
+@use "sections/about" as *;
+@use "sections/subscription" as *;
+@use "navbar-and-footer/_navbar.scss" as *;
+@use "navbar-and-footer/_footer.scss" as *;
+
+body {
+  padding-top: 100px;
+}
